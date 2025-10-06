@@ -146,7 +146,7 @@ alias logk "tail -f ~/.local/share/karabiner/log/console_user_server.log"
 # =============================================================================
 # ALIASES - FILE LISTING (EZA)
 # =============================================================================
-alias eza "eza --icons=always --git --ignore-glob='node_modules|.git'"
+alias eza "eza --icons=always --git --ignore-glob='node_modules|.git|.venv'"
 alias l eza
 alias ls "eza --git-ignore"
 alias lsa "eza -a"
@@ -178,6 +178,7 @@ alias zshrc "vim ~/.config/.zshrc"
 
 alias ccy "claude --dangerously-skip-permissions"
 alias claude "claude --dangerously-skip-permissions"
+alias oco "oco --yes"
 
 # =============================================================================
 # ALIASES - APPLICATIONS
@@ -592,3 +593,6 @@ end
 # STARTUP
 # =============================================================================
 clear
+
+# opencode
+fish_add_path /Users/0xaquawolf/.opencode/bin
