@@ -137,6 +137,7 @@ alias sf "fzf | xargs nvim"
 alias hf "history | fzf"
 alias pp "string split ':' $PATH | fzf"
 alias btop bpytop
+alias ngrok "ngrok http 3000 --url \"https://robust-noble-jackal.ngrok-free.app\""
 
 # System management
 alias skv "skhd --stop-service && skhd -V"
