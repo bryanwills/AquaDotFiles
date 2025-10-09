@@ -1,6 +1,15 @@
 #!/usr/bin/env fish
 
 # =============================================================================
+# IMPORTS
+# =============================================================================
+
+set PRIVATE_KEYS_FILE $HOME/.config/fish/private/keys.fish
+if test -f $PRIVATE_KEYS_FILE
+    source $PRIVATE_KEYS_FILE
+end
+
+# =============================================================================
 # SSH AGENT SETUP
 # =============================================================================
 if not set -q SSH_AUTH_SOCK
@@ -326,11 +335,6 @@ end
 # =============================================================================
 # FUNCTIONS -  AI Management
 # =============================================================================
-function glm --description "Update claude code with GLM"
-    export ANTHROPIC_AUTH_TOKEN=12d112bf8976484caffdc3716c211afb.bz7Xtm9DumCEaMve
-    export ANTHROPIC_BASE_URL=https://api.z.ai/api/anthropic
-    claude
-end
 
 # =============================================================================
 # FUNCTIONS - STOW MANAGEMENT

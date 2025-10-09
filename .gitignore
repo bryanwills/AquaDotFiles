@@ -34,3 +34,4 @@ vendor/
 obs/*.mp4
 
 espanso/.config/espanso/match/private/*
+fish/.config/fish/private/*
